@@ -1,0 +1,22 @@
+{
+	"geode": "4.4.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "jarvisdevil.gstyle",
+	"name": "GStyle",
+	"version": "v1.0.0",
+	"developer": "jarvisdevil",
+	"description": "",
+	"settings": {
+    	"stylesheet": {
+        	"name": "Stylesheet",
+        	"description": "Path to a .gstyle file.",
+        	"type": "file",
+        	"default": "{mod_config_dir}/main.gstyle"
+    	}
+	}
+}
