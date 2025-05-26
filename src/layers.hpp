@@ -322,6 +322,7 @@ class $modify(GJPathPage) {
     }
 };
 
+#if defined(_WIN32)
 class $modify(SetTextPopup) {
     bool init(gd::string value, gd::string placeholder, int maxLength, gd::string title, gd::string okBtnText, bool showResetBtn, float p6) {
         if (!SetTextPopup::init(value, placeholder, maxLength, title, okBtnText, showResetBtn, p6)) return false;
@@ -329,6 +330,7 @@ class $modify(SetTextPopup) {
         return true;
     }
 };
+#endif
 
 class $modify(SetFolderPopup) {
     bool init(int value, bool isCreated, gd::string title) {
