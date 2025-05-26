@@ -210,7 +210,6 @@ class $modify(GauntletLayer) {
     }
 };
 
-#if defined(_WIN32)
 class $modify(SongInfoLayer) {
     bool init(gd::string p0, gd::string p1, gd::string p2, gd::string p3, gd::string p4, gd::string p5, int p6, gd::string p7, int p8) {
         if (!SongInfoLayer::init(p0, p1, p2, p3, p4, p5, p6, p7, p8)) return false;
@@ -218,7 +217,6 @@ class $modify(SongInfoLayer) {
         return true;
     }
 };
-#endif
 
 class $modify(LevelLeaderboard) {
     bool init(GJGameLevel* level, LevelLeaderboardType type, LevelLeaderboardMode mode) {
@@ -268,7 +266,6 @@ class $modify(CreateGuidelinesLayer) {
     }
 };
 
-#if defined(_WIN32)
 class $modify(SelectArtLayer) {
     bool init(SelectArtType type, int p1) {
         if (!SelectArtLayer::init(type, p1)) return false;
@@ -276,7 +273,6 @@ class $modify(SelectArtLayer) {
         return true;
     }
 };
-#endif
 
 class $modify(ColorSelectPopup) {
     bool init(EffectGameObject* effect, cocos2d::CCArray* array, ColorAction* action) {
@@ -318,7 +314,6 @@ class $modify(EditLevelLayer) {
     }
 };
 
-#if defined(_WIN32)
 class $modify(GJPathPage) {
     bool init(int p0, GJPathsLayer* p1) {
         if (!GJPathPage::init(p0, p1)) return false;
@@ -327,6 +322,7 @@ class $modify(GJPathPage) {
     }
 };
 
+#if defined(_WIN32)
 class $modify(SetTextPopup) {
     bool init(gd::string value, gd::string placeholder, int maxLength, gd::string title, gd::string okBtnText, bool showResetBtn, float p6) {
         if (!SetTextPopup::init(value, placeholder, maxLength, title, okBtnText, showResetBtn, p6)) return false;
@@ -334,7 +330,7 @@ class $modify(SetTextPopup) {
         return true;
     }
 };
-
+#endif
 
 class $modify(SetFolderPopup) {
     bool init(int value, bool isCreated, gd::string title) {
@@ -343,7 +339,6 @@ class $modify(SetFolderPopup) {
         return true;
     }
 };
-#endif
 
 class $modify(AudioAssetsBrowser) {
     bool init(gd::vector<int>& songIds, gd::vector<int>& sfxIds) {
@@ -361,7 +356,6 @@ class $modify(LevelSearchLayer) {
     }
 };
 
-#if defined(_WIN32)
 class $modify(NCSInfoLayer) {
     bool init(CustomSongLayer* layer) {
         if (!NCSInfoLayer::init(layer)) return false;
@@ -377,7 +371,6 @@ class $modify(MusicBrowser) {
         return true;
     }
 };
-#endif
 
 class $modify(GJColorSetupLayer) {
     bool init(LevelSettingsObject* p0) {
