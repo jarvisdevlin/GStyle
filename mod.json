@@ -9,7 +9,7 @@
 	"name": "GStyle",
 	"version": "v1.0.0",
 	"developer": "jarvisdevil",
-	"description": "",
+	"description": "Customize Geometry Dash",
 	"settings": {
     	"stylesheet": {
         	"name": "Stylesheet",
