@@ -17,5 +17,13 @@
         	"type": "file",
         	"default": "{mod_config_dir}/main.gstyle"
     	}
-	}
+	},
+    "dependencies": [
+        {
+            "id": "geode.node-ids",
+            "version": ">=v1.20.1",
+            "importance": "required"
+        }
+    ],
+    "tags": ["customization", "enhancement", "interface", "utility"]
 }
